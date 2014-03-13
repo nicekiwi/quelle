@@ -28,3 +28,4 @@ First step is to ggt a basic extendable system running with the following featue
 - On the fly SourceMod editing, compilation and configuring.
 - Support for Additional Games (CounterStrike GO, Dota).
 - Support for Non-Source Games (Minecraft).
+- NodeJS support for the interface with Laravel PHP as a backend.
