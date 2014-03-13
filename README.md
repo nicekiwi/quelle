@@ -7,7 +7,7 @@ A full featured web-interface for administering games based on Valve's Source En
 - Event creation with assigned Configs, Maps and pushied data
 - Map management, Upload to Amazon S3, Shedule Maps
 
-Initially created in PHP, moving to NodeJS at a later date.
+Initially created in PHP with Laravel and rendered with Bootstrap, moving to NodeJS at a later date.
 
 ## Current Targets for 1.0 release
 
