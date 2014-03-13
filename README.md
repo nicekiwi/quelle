@@ -1,7 +1,7 @@
 Quelle (Source)
 =============
 
-A full featured web-interface for administering games based on Valve's Source Engine.
+A full featured web-interface to manage servers for games based on Valve's Source Engine.
 
 - On the fly Config editing with sheduling support
 - Event creation with assigned Configs, Maps and pushied data
