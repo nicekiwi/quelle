@@ -1,4 +1,4 @@
-Quelle (Source) Engine
+Quelle (Source)
 =============
 
 A full featured web-interface for administering games based on Valve's Source Engine.
