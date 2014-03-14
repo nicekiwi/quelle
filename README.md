@@ -19,13 +19,15 @@ First step is to ggt a basic extendable system running with the following featue
 - RCON command interface.
 - Map Managment.
 - Donations linked to donator rewards system.
-- Basic Ban system.
+- Basic Ban system (Two Way).
 
 ## Future Ideas
 
+- Option to choose SSH, FTP or Local installation.
 - Stats intergrations, pulling form player logs.
 - Global Bans database (Similar to SourceBans).
 - On the fly SourceMod editing, compilation and configuring.
 - Support for Additional Games (CounterStrike GO, Dota).
 - Support for Non-Source Games (Minecraft).
 - NodeJS support for the interface with Laravel PHP as a backend.
+- HLDJ Intergration for JukeBox, search music databases, convert file formats and stream to game (Highly Illegal). Playlist setups etc.
