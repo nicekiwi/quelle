@@ -30,4 +30,6 @@ First step is to ggt a basic extendable system running with the following featue
 - Support for Additional Games (CounterStrike GO, Dota).
 - Support for Non-Source Games (Minecraft).
 - NodeJS support for the interface with Laravel PHP as a backend.
-- HLDJ Intergration for JukeBox, search music databases, convert file formats and stream to game (Highly Illegal). Playlist setups etc.
+
+* **HLDJ Intergration for JukeBox**  
+Search online music databases like Spotify and YouTube, Download -> convert file formats -> stream to game (Highly Illegal from a privacy POV). Pre-defined playlist setups.
