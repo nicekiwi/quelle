@@ -21,6 +21,7 @@ app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.methodOverride());
 app.use(app.router);
+app.use(require('stylus').middleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // development only
@@ -30,6 +31,40 @@ if ('development' == app.get('env')) {
 
 app.get('/', routes.index);
 app.get('/users', user.list);
+
+app.get('/config-get', function(request, response, error){
+  var exec = require('ssh-exec');
+
+  var c = exec.connection({
+    user: 'sidan',
+    host: '203.33.121.205',
+    key: '~/.ssh/pantheon_rsa',
+  });
+
+  //exec('cat ~/service311/tf/cfg/server.cfg', c).pipe(process.stdout);
+
+  exec('cat ~/service311/tf/cfg/server.cfg', c, function(err, stdout, stderr) {
+    console.log(stdout);
+
+    response.write(stdout);
+    response.end();
+  });//.pipe(process.stdout);
+
+  // stream.on('error', function(){
+  //   response.end('error');
+  // });
+
+  // stream.on('data', function(data) {
+  //   console.log(data);
+  // });
+
+  // stream.on('error', function(err) {
+  //   console.log('something went wrong')
+  // });
+
+  //response.end('win');
+
+});
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
