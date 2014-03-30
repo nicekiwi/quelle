@@ -32,4 +32,6 @@ First step is to ggt a basic extendable system running with the following featue
 - NodeJS support for the interface with Laravel PHP as a backend.
 
 * **HLDJ Intergration for JukeBox**  
-Search online music databases like Spotify and YouTube, Download -> convert file formats -> stream to game (Highly Illegal from a privacy POV). Pre-defined playlist setups.
+Search online music databases like Spotify and YouTube, Download -> convert file formats -> stream to game (Highly Illegal from a piracy POV). Pre-defined playlist setups.
+
+Or make use of the `SourceMOD Radio Plugin` to create a playlist and stream directly to gamers ingame. Cull HLDJ completely and stream from youtube.
