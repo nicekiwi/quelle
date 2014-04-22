@@ -14,7 +14,7 @@ var jshint 			= require('gulp-jshint'),
     includejs       = require('gulp-include'),
     importcss       = require('gulp-cssimport'),
 	sass			= require('gulp-ruby-sass');
- 
+
 var sources = {
     sass: {
         all: './app/assets/scss/*.scss'
@@ -85,13 +85,13 @@ gulp.task('scripts', function() {
 gulp.task('sass', function() {
 
     gulp.src([
-            './app/assets/scss/app.scss', 
+            './app/assets/scss/app.scss',
             './app/assets/scss/app-admin.scss'
         ])
         .pipe(importcss())
         .pipe(sass({
             loadPath: [
-                './bower_components/foundation/scss', 
+                './bower_components/foundation/scss',
                 './bower_components'
             ]
         }))
